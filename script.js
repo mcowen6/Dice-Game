@@ -63,11 +63,11 @@ btnRoll.addEventListener('click', function() {
     if(playing) {
     // 1. random dice roll
     const dice = Math.trunc(Math.random() * 6) + 1;
-    console.log(dice);
+    // console.log(dice);
 
     // 2. diplay dice roll
     diceEl.classList.remove('hidden');
-    diceEl.src = (`/images/dice-${dice}.png`)
+    diceEl.src = (`images/dice-${dice}.png`)
 
     // 3. if 1, lose & reset game
     if(dice !==1) {
